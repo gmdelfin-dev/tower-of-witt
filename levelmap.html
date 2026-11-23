@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Level Map | Tower of Wit</title>   
+        <link rel="icon" type="image/png" href="tow-images/favicon-logo.png">
+        <link rel="apple-touch-icon" href="tow-images/apple-touch-icon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="page-map">
+        <main class="home-page">
+            <div class="level-card">
+                <h2>Choose a tower</h2>
+                <p>Each tower is taller than the last tower. Beat a level to unlock the next one. The boss waits at the top on Level 5!</p>
+
+                <div class="road-map">
+                    <img class="road-pic" src="tow-images/road.png" alt="">
+
+                    <a class="spot spot1 on" href="levelmap.html" title="Level 1">
+                        <img class="tower-pic" src="tow-images/towers/tower-3.png" alt="Level 1 tower">
+                        <span class="oval-shape"></span>
+                        <!-- player -->
+                        <span class="avatar-chosen"><img src="tow-images/characters/kennedy.png" alt="You"></span>
+                        <!-- levels -->
+                        <span class="label-level">
+                            <b>Level 1</b>
+                            <p>7 HP, 30s</p>
+                        </span>
+                    </a>
+
+                    <a class="spot spot2" href="levelmap.html" title="Level 2">
+                        <img class="tower-pic" src="tow-images/towers/tower-4.png" alt="Level 2 tower">
+                        <span class="oval-shape"></span>
+                        <span class="label-level">
+                            <b>Level 2</b>
+                            <p>6 HP, 25s</p>
+                        </span>
+                    </a>
+
+                    <a class="spot spot3" href="levelmap.html" title="Level 3">
+                        <img class="tower-pic" src="tow-images/towers/tower-5.png" alt="Level 3 tower">
+                        <span class="oval-shape"></span>
+                        <span class="label-level">
+                            <b>Level 3</b>
+                            <p>5 HP, 22s</p>
+                        </span>
+                    </a>
+
+                    <a class="spot spot4" href="levelmap.html" title="Level 4">
+                        <img class="tower-pic" src="tow-images/towers/tower-6.png" alt="Level 4 tower">
+                        <span class="oval-shape"></span>
+                        <span class="label-level">
+                            <b>Level 4</b>
+                            <p>4 HP, 20s</p>
+                        </span>
+                    </a>
+
+                    <a class="spot spot5" href="levelmap.html" title="Level 5">
+                        <img class="tower-pic" src="tow-images/towers/tower-7.png" alt="Level 5 tower">
+                        <span class="oval-shape"></span>
+                        <span class="label-level">
+                            <b>Level 5</b>
+                            <p>3 HP, 18s</p>
+                        </span>
+                    </a>
+
+                    <div class="map-icons">
+                        <a class="map-icon plain" href="howtoplay.html" title="How to play">
+                            <img src="tow-images/icons/help.png" alt="How to play help icon">
+                        </a>
+                        <a class="map-icon" href="leaderboard.html" title="Leaderboard"> 
+                            <img src="tow-images/icons/trophy.png" alt="Trophy for leaderboard icon">
+                        </a>
+                        <a class="map-icon" href="#settings" title="Settings"> 
+                            <img src="tow-images/icons/settings.png" alt="settings icon">
+                        </a>
+                    </div>
+                </div>
+
+                <p class="hint-mode" id="map-hint">Rainy weather (Easy mode). Higher levels give you fewer hearts and harder questions.</p> 
+
+                <div class="button-row">
+                    <a class="btn btn-green" href="game.html">Start playing</a>
+                    <a class="btn btn-orange" href="setup.html">Back</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- for settings -->
+        <div class="popup" id="settings">
+            <div class="popup-card">
+                <h2>Settings</h2>
+
+                <h3>Topic</h3>
+                <div class="pick-row">
+                    <div class="pick">
+                        <input type="radio" name="topic" id="topic-history" checked>
+                        <label for="topic-history">History</label>
+                    </div>
+
+                    <div class="pick">
+                        <input type="radio" name="topic" id="topic-food">
+                        <label for="topic-food">Food</label>
+                    </div>
+
+                    <div class="pick">
+                        <input type="radio" name="topic" id="topic-places">
+                        <label for="topic-places">Places</label>
+                    </div>
+                </div>
+
+                <h3>Today's weather</h3>
+                <div class="pick-row">
+                    <div class="pick weather-pick">
+                        <input type="radio" name="weather" id="weather-rainy" checked>
+                        <label for="weather-rainy">
+                            <img src="tow-images/backgrounds/rainy.jpg" alt="">
+                            Rainy 
+                            <p class="small">Easy Mode</p>
+                        </label>
+                    </div>
+
+                    <div class="pick weather-pick">
+                        <input type="radio" name="weather" id="weather-snowy">
+                        <label for="weather-snowy">
+                            <img src="tow-images/backgrounds/snowy.jpg" alt="">
+                            Snowy
+                            <p class="small">Medium Mode</p>
+                        </label>
+                    </div>
+
+                    <div class="pick weather-pick">
+                        <input type="radio" name="weather" id="weather-windy">
+                        <label for="weather-windy">
+                            <img src="tow-images/backgrounds/windy.jpg" alt="">
+                            Windy 
+                            <p class="small">Hard Mode</p>
+                        </label>
+                    </div>
+
+                    <div class="pick weather-pick">
+                        <input type="radio" name="weather" id="weather-sunny">
+                        <label for="weather-sunny">
+                            <img src="tow-images/backgrounds/sunny.jpg" alt="">
+                            Rainy 
+                            <p class="small">Hardest Mode</p>
+                        </label>
+                    </div>
+                </div>
+
+                <h3>Pick your animal partner</h3>
+                <div class="pick-row">
+                    <div class="pick animal-pick">
+                        <input type="radio" name="animal" id="animal-frog" checked>
+                        <label for="animal-frog">
+                            <img src="tow-images/animals/frog.png" alt="">
+                            Frog 
+                            <p class="small">Rainy Weather</p>
+                        </label>
+                    </div>
+
+                    <div class="pick animal-pick">
+                        <input type="radio" name="animal" id="animal-penguin">
+                        <label for="animal-penguin">
+                            <img src="tow-images/animals/penguin.png" alt="">
+                            Penguin 
+                            <p class="small">Snowy Weather</p>
+                        </label>
+                    </div>
+
+                    <div class="pick animal-pick">
+                        <input type="radio" name="animal" id="animal-eagle">
+                        <label for="animal-eagle">
+                            <img src="tow-images/animals/eagle.png" alt="">
+                            Frog 
+                            <p class="small">Windy Weather</p>
+                        </label>
+                    </div>
+
+                    <div class="pick animal-pick">
+                        <input type="radio" name="animal" id="animal-buffalo">
+                        <label for="animal-buffalo">
+                            <img src="tow-images/animals/buffalo.png" alt="">
+                            Carabao
+                            <p class="small">Sunny Weather</p>
+                        </label>
+                    </div>
+
+                    <div class="button-row">
+                        <a class="btn btn-green" href="#">Done</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="tow-script/storage.js"></script>
+    <script src="tow-script/questions.js"></script>
+    <script src="tow-script/levelmap.js"></script>
+    <script src="tow-script/music.js"></script>
+    </body>
+</html>

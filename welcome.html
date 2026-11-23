@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="tow-images/favicon-logo.png">
+  <link rel="apple-touch-icon" href="tow-images/apple-touch-icon.png">
+  <title>Welcome | Tower of Wit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-welcome">
+  <img
+    src="tow-images/backgrounds/city.png"
+    alt="Background"
+    style="position: fixed; inset: 0; width: clamp(320px, 100vw, 1920px); height: clamp(568px, 100dvh, 1080px); object-fit: cover; object-position: center; z-index: -1;"
+  />
+  <img
+    src="tow-images/logo-bgr.png"
+    alt="Title"
+    style= "width: 14.4rem;
+  max-width: 100%;                 
+  height: auto;
+  width: clamp(180px, 40vw, 300px); height: auto; max-width: 90vw; object-fit: contain; position: absolute; top: clamp(12px, 3vh, 25px); left: 50%; transform: translateX(-50%); z-index: 1;"
+  />
+
+  <div class="menu-card">
+    <div class="welcome-badge">WELCOME</div>
+    <button type="button" id="loginBtn" class="menu-btn btn-login">Log in</button>
+    <button type="button" id="signupBtn" class="menu-btn btn-signup">Sign up</button>
+    <button type="button" id="howtoBtn" class="menu-btn btn-howto">How to play</button>
+  </div>
+
+  <script src="tow-script/menu.js"></script>
+  <script src="tow-script/music.js"></script>
+</body>
+</html>

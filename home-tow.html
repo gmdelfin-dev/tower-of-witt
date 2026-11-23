@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Tower of Wit - Home</title>   
+        <link rel="icon" type="image/png" href="tow-images/favicon-logo.png">
+        <link rel="apple-touch-icon" href="tow-images/apple-touch-icon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="page-home">
+        <main class="home-page">
+            <!-- for the top row -->
+            <div class="topbar">
+                <a class="icon" href="howtoplay.html" title="How to play">
+                    <img src="tow-images/icons/help.png" alt="Help icon for how to play page">
+                </a>
+                <div class="home-coins">
+                    <span id="coin-count">000</span> <!-- the number of coins that the user obtained -->
+                    <img src="tow-images/icons/coin.png" alt="coin gold with four-leaf clover at the center">
+                </div>
+            </div>
+
+            <img class="homepage-logo" src="tow-images/logo-bgr.png" alt="tower of wit logo">
+
+            <div class="home-scene">
+                <img class="hs-spark s1" src="tow-images/sparkles.png" alt="">
+                <img class="hs-spark s2" src="tow-images/sparkles.png" alt="">
+
+                <img class="hs-animal h1" src="tow-images/animals/buffalo.png" alt="carabao / water buffalo">
+                <img class="hs-animal h2" src="tow-images/animals/frog.png" alt="frog">
+                <img class="hs-animal h3" src="tow-images/animals/penguin.png" alt="penguin">
+                <img class="hs-animal h4" src="tow-images/animals/eagle.png" alt="eagle">
+
+                <div class="hs-me" id="my-avatar">
+                 <img
+                 id="playerCharacterImg"
+                 alt="Selected Character"
+                 />
+                </div>
+                <img class="hs-podium" src="tow-images/home-podium.png" alt="">
+            </div>
+
+            <div class="home-actions">
+                <span class="home-btn home-name" id="avatar-name">[sunkiss]</span>
+                <a class="home-btn home-play" href="setup.html">
+                    <img src="tow-images/icons/play.png" alt="">
+                    <span>Play</span>
+                </a>
+                <a class="home-btn home-out" href="login.html" id="logout-button">Log out</a>
+            </div>
+
+            <a class="credits-link" href="credits.html">Image credits</a>
+
+            <nav class="game-nav">
+                <a class="icon" href="leaderboard.html" title="Leaderboard">
+                    <img src="tow-images/icons/trophy.png" alt="Trophy of scores for leaderboard">
+                </a>
+                <a class="icon" href="#settings" title="Settings">
+                    <img src="tow-images/icons/settings.png" alt="settings">
+                </a>
+                <a class="icon" href="howtoplay.html" title="How to play">
+                    <img src="tow-images/icons/help.png" alt="Help icon for how to play">
+                </a>
+            </nav>
+        </main>
+
+        <!-- for settings -->
+        <div class="popup" id="settings">
+            <div class="popup-card">
+                <h2>Settings</h2>
+
+                <h3>Topic</h3>
+                <div class="pick-row">
+                    <div class="pick">
+                        <input type="radio" name="topic" id="topic-history" checked>
+                        <label for="topic-history">History</label>
+                    </div>
+
+                    <div class="pick">
+                        <input type="radio" name="topic" id="topic-food">
+                        <label for="topic-food">Food</label>
+                    </div>
+
+                    <div class="pick">
+                        <input type="radio" name="topic" id="topic-places">
+                        <label for="topic-places">Places</label>
+                    </div>
+                </div>
+
+                <h3>Today's weather</h3>
+                <div class="pick-row">
+                    <div class="pick weather-pick">
+                        <input type="radio" name="weather" id="weather-rainy" checked>
+                        <label for="weather-rainy">
+                            <img src="tow-images/backgrounds/rainy.jpg" alt="">
+                            Rainy 
+                            <p class="small">Easy Mode</p>
+                        </label>
+                    </div>
+
+                    <div class="pick weather-pick">
+                        <input type="radio" name="weather" id="weather-snowy">
+                        <label for="weather-snowy">
+                            <img src="tow-images/backgrounds/snowy.jpg" alt="">
+                            Snowy
+                            <p class="small">Medium Mode</p>
+                        </label>
+                    </div>
+
+                    <div class="pick weather-pick">
+                        <input type="radio" name="weather" id="weather-windy">
+                        <label for="weather-windy">
+                            <img src="tow-images/backgrounds/windy.jpg" alt="">
+                            Windy 
+                            <p class="small">Hard Mode</p>
+                        </label>
+                    </div>
+
+                    <div class="pick weather-pick">
+                        <input type="radio" name="weather" id="weather-sunny">
+                        <label for="weather-sunny">
+                            <img src="tow-images/backgrounds/sunny.jpg" alt="">
+                            Rainy 
+                            <p class="small">Hardest Mode</p>
+                        </label>
+                    </div>
+                </div>
+
+                <h3>Pick your animal partner</h3>
+                <div class="pick-row">
+                    <div class="pick animal-pick">
+                        <input type="radio" name="animal" id="animal-frog" checked>
+                        <label for="animal-frog">
+                            <img src="tow-images/animals/frog.png" alt="">
+                            Frog 
+                            <p class="small">Rainy Weather</p>
+                        </label>
+                    </div>
+
+                    <div class="pick animal-pick">
+                        <input type="radio" name="animal" id="animal-penguin">
+                        <label for="animal-penguin">
+                            <img src="tow-images/animals/penguin.png" alt="">
+                            Penguin 
+                            <p class="small">Snowy Weather</p>
+                        </label>
+                    </div>
+
+                    <div class="pick animal-pick">
+                        <input type="radio" name="animal" id="animal-eagle">
+                        <label for="animal-eagle">
+                            <img src="tow-images/animals/eagle.png" alt="">
+                            Frog 
+                            <p class="small">Windy Weather</p>
+                        </label>
+                    </div>
+
+                    <div class="pick animal-pick">
+                        <input type="radio" name="animal" id="animal-buffalo">
+                        <label for="animal-buffalo">
+                            <img src="tow-images/animals/buffalo.png" alt="">
+                            Carabao
+                            <p class="small">Sunny Weather</p>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="button-row">
+                    <a class="btn btn-green" href="#">Done</a>
+                </div>
+            </div>
+        </div>
+        <script src="tow-script/storage.js"></script>
+    <script src="tow-script/home-tow.js"></script>
+    <script src="tow-script/music.js"></script>
+    <script src="main.js"></script>
+    </body>
+</html>

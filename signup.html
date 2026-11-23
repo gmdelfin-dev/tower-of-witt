@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="tow-images/favicon-logo.png">
+  <link rel="apple-touch-icon" href="tow-images/apple-touch-icon.png">
+  <title>Sign Up | Tower of Wit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-signup">
+  <img
+    src="tow-images/backgrounds/tower-main.png"
+    alt="Background"
+    style="position: fixed; inset: 0; width: 100vw; height: 100vh; height: 100dvh; object-fit: cover; object-position: center; z-index: -1;"
+  />
+  <img
+    src="tow-images/logo-bgr.png"
+    alt="Title"
+    style="width: clamp(180px, 40vw, 300px); height: auto; max-width: 90vw; object-fit: contain; position: absolute; top: clamp(12px, 3vh, 25px); left: 50%; transform: translateX(-50%); z-index: 1;"
+  />
+
+  <div class="signup-card">
+    <form id="signupForm" class="signup-form">
+      <h1 class="signup-card-title">Sign up</h1>
+      <p class="signup-card-subtitle">Create your account, then pick your character. Accounts are saved on the same device.</p>
+
+      <div class="signup-input-group">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your username"
+          required
+          pattern=".*\S.*"
+          title="Enter a username containing at least one non-space character"
+        />
+      </div>
+
+      <div class="signup-input-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          required
+          pattern=".*\S.*"
+          title="Enter a password containing at least one non-space character"
+        />
+      </div>
+
+      <div class="signup-input-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Confirm password"
+          required
+          pattern=".*\S.*"
+          title="Confirm your password"
+        />
+      </div>
+
+      <h2 class="signup-section-title">Pick your character</h2>
+
+      <div class="character-grid" id="characterGrid">
+        <label class="character-card">
+          <input type="radio" name="character" value="Archer" checked />
+          <div class="character-avatar">
+            <img src="tow-images/characters/archer.png" alt="Archer" onerror="this.style.display='none'" />
+          </div>
+          <span class="character-name">Archer</span>
+        </label>
+
+        <label class="character-card">
+          <input type="radio" name="character" value="Gwen" />
+          <div class="character-avatar">
+            <img src="tow-images/characters/gwen.png" alt="Gwen" onerror="this.style.display='none'" />
+          </div>
+          <span class="character-name">Gwen</span>
+        </label>
+
+        <label class="character-card">
+          <input type="radio" name="character" value="Jigs" />
+          <div class="character-avatar">
+            <img src="tow-images/characters/jigs.png" alt="Jigs" onerror="this.style.display='none'" />
+          </div>
+          <span class="character-name">Jigs</span>
+        </label>
+
+        <label class="character-card">
+          <input type="radio" name="character" value="Kennedy" />
+          <div class="character-avatar">
+            <img src="tow-images/characters/kennedy.png" alt="Kennedy" onerror="this.style.display='none'" />
+          </div>
+          <span class="character-name">Kennedy</span>
+        </label>
+      </div>
+
+      <button type="submit" id="signupForm" class="signup-btn-submit">Create account</button>
+
+      <p class="login-prompt">
+        Already have an account? <a href="login.html">Log in</a>
+      </p>
+    </form>
+  </div>
+
+  <script src="tow-script/storage.js"></script>
+  <script src="tow-script/menu.js"></script>
+  <script src="tow-script/music.js"></script>
+</body>
+</html>

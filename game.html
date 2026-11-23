@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tower of Wit - Game</title>   
+        <link rel="icon" type="image/png" href="tow-images/favicon-logo.png">
+        <link rel="apple-touch-icon" href="tow-images/apple-touch-icon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="page-game">
+        <main class="home-page">
+            <!-- the background container that holds the whole game -->
+            <div class="game-screen">
+                <div class="game-world">
+                    <div class="tower-world" id="tower-world">
+                        <div class="tower-ground"></div>
+                        <img class="tower-img" src="tow-images/towers/tower-3.png" alt="1st tower with 3 buildings">
+                        <div class="floor floor-1"><b class="floor-number">1</b></div>
+                        <div class="floor floor-2"><b class="floor-number">2</b></div>
+                        <div class="floor floor-3"><b class="floor-number">3</b></div>
+
+                        <div class="enemy enemy-1"><img src="tow-images/characters/entity.png" alt="Enemy named entity"></div>
+                        <div class="enemy enemy-2"><img src="tow-images/characters/entity.png" alt="Enemy named entity"></div>
+                        <div class="enemy enemy-3"><img src="tow-images/characters/entity.png" alt="Enemy named entity"></div>
+
+                        <div class="elevator-lift" id="elevator-lift">
+                            <img class="elevator-cab" src="tow-images/elevator.png" alt="">
+                            <div class="hero-avatar" id="hero-avatar"><img src="tow-images/characters/kennedy.png" alt="character you picked"></div>
+                            <div class="avatar-pet"><img src="tow-images/animals/frog.png" alt="Frog"></div> <!-- TO BE CHANGED -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="top-game">
+                    <div class="hearts-full" id="hearts-full">
+                        <!-- TO BE CHANGED -->
+                        <img src="tow-images/icons/heart-full.png" alt="">
+                        <img src="tow-images/icons/heart-full.png" alt="">
+                        <img src="tow-images/icons/heart-full.png" alt="">
+                        <img src="tow-images/icons/heart-full.png" alt="">
+                        <img src="tow-images/icons/heart-full.png" alt="">
+                        <img src="tow-images/icons/heart-full.png" alt="">
+                        <img src="tow-images/icons/heart-full.png" alt="">
+                    </div>
+                    <span class="pill-game" id="floor-pill">Floor 1/3</span>
+                    <span class="pill-game" id="score-pill">0 pts</span>
+                </div>
+
+                <div class="question-card">
+                    <div class="timer-bar"><div class="timer-fill" id="timer-fill"></div></div>
+                    <div class="question-text" id="question-text">Which cold dessert has shaved ice, sweet beans and milk?</div>
+                </div>
+
+                <div class="answer-box" id="answer-box">
+                    <!-- the message "Correct! + points" goes here (it is hidden while it is empty) -->
+                    <div class="feedback" id="feedback"></div>
+
+                    <div class="answers" id="answers">
+                        <button class="answer" type="button">A. Halo-halo</button>
+                        <button class="answer" type="button">B. Leche flan</button>
+                        <button class="answer" type="button">C. Bibingka</button>
+                        <button class="answer" type="button">D. Turon</button>
+                    </div>
+
+                    <div class="bottom-row">
+                        <span class="pill-game pill-cream" id="streak-pill">Streak 0</span>
+                        <span class="pill-game pill-cream" id="time-pill">Time 0:00</span>
+                        <a class="btn btn-orange btn-small" href="home-tow.html" id="quit-button">Quit</a>
+                    </div>
+                </div>
+
+                <!-- the result box -->
+                <div class="overlay result" id="game-end">
+                    <div class="level-card">
+                        <!-- TO BE CHANGED -->
+                        <h2 id="result-title">You reached the rooftop!</h2>
+                        <p class="result-line" id="result-info">Final score 0 with 0 HP left. You earned 0 coins.</p>
+                        <p class="result-line" id="result-stats">Level 1 &bull; Rainy &bull; Time: 0:00 &bull; Mistakes: 0</p>
+                        <p class="result-high" id="result-high">High score: 0</p>
+
+                        <table id="result-table">
+                            <tr>
+                                <th>#</th>
+                                <th>Player</th>
+                                <th>Score</th>
+                                <th>Floor</th>
+                                <th>Time</th>
+                            </tr>
+                            <tr class="player-result">
+                                <td>1</td>
+                                <td>sunkiss</td>
+                                <td>1250</td>
+                                <td>3/3</td>
+                                <td>0:48</td>
+                            </tr>    
+                        </table>
+
+                        <div class="row">
+                            <a class="btn btn-orange" href="game.html" id="next-level-button">Next level</a>
+                            <a class="btn btn-orange" href="game.html">Play again</a>
+                            <a class="btn btn-cream" href="home-tow.html">Home</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- start box -->
+                <!-- TO BE CHANGED -->
+                <span id="tower-climb"></span>
+                <div class="overlay" id="intro">
+                    <div class="level-card">
+                        <h2 id="intro-title">Rainy day (Easy mode)</h2>
+                        <div class="intro-pics" id="intro-pics">
+                        <img src="tow-images/backgrounds/rainy.jpg" alt="Rainy day">
+                        <img class="animal-icon" src="tow-images/animals/frog.png" alt="Frog">
+                    </div>
+                    <p id="intro-text">Great pick! Frog loves rainy days. Its power is ON: +5 seconds on every question.</p>
+                    <a class="btn btn-green" href="#climb" id="intro-button">Let's climb!</a>
+                </div>
+            </div>
+            </div>
+        </main>
+    <script src="tow-script/storage.js"></script>
+    <script src="tow-script/questions.js"></script>
+    <script src="tow-script/game.js"></script>
+    <script src="tow-script/music.js"></script>
+    </body>
+</html>

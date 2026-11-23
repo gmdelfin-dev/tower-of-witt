@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="tow-images/favicon-logo.png">
+    <link rel="apple-touch-icon" href="tow-images/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Leaderboard | Tower of Wit</title>
+</head>
+
+<body class="leaderboard-page">
+
+    <main class="leaderboard-container">
+      <div class="logo-container">
+        <img src="tow-images/tower-of-wit-logo-removed-bg.png"alt="Tower of Wit Logo" class="game-logo">
+      </div>
+
+      <header class="leaderboard-heading">
+        <img src="tow-images/icons/trophy.png" alt="Trophy" class="page-icon">
+        <h1 class="page-title">Leaderboard</h1>
+      </header>
+
+      <section>
+          <h2 class="section-title">Choose Topic</h2>
+          <div class="filter-group" id="topic-filters"> 
+            <button class="filter-label active" type="button" data-topic="all">  All </button> 
+            <button class="filter-label" type="button" data-topic="History"> History </button>
+            <button class="filter-label" type="button" data-topic="Food"> Food </button>
+            <button class="filter-label" type="button" data-topic="Places"> Places </button>
+          </div>
+     </section>
+
+     <section>
+        <h2 class="section-title">Choose Level</h2>
+        <div class="filter-group" id="level-filters">
+          <button class="filter-label active" type="button" data-level="all"> All Levels </button>
+          <button class="filter-label" type="button" data-level="1"> Level 1 </button>
+          <button class="filter-label" type="button" data-level="2"> Level 2 </button>
+          <button class="filter-label" type="button" data-level="3"> Level 3  </button>
+          <button class="filter-label" type="button" data-level="4"> Level 4 </button>
+          <button class="filter-label" type="button" data-level="5"> Level 5</button>
+        </div>
+     </section>
+    
+     <section class="table-wrapper">
+        <table class="leaderboard-table">
+            <thead>
+              <tr>
+                 <th>Rank</th>
+                 <th>Player</th>
+                 <th>Score</th>
+                 <th>Floor</th>
+                 <th>Time</th>
+              </tr>
+            </thead>
+
+            <tbody id="leaderboard-body">
+            </tbody>
+            </table>
+
+            <p id="leaderboard-message"
+                style="text-align: center; margin-top: 20px;"
+                hidden>
+            </p>
+        </section>
+
+       
+      <div class="action-row">
+        <a href="home-tow.html" class="main-button orange-button"> Back </a>
+        </div>
+    </main>
+
+    <script src="tow-script/storage.js"></script>
+    <script src="tow-script/leaderboard.js"></script>
+    <script src="tow-script/music.js"></script>
+
+</body>
+</html>

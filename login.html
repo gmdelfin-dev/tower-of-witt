@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="tow-images/favicon-logo.png">
+    <link rel="apple-touch-icon" href="tow-images/apple-touch-icon.png">
+    <title>Log In | Tower of Wit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-login">
+ <img src="tow-images/backgrounds/tower-main.png" alt="Background" style="position: fixed; inset: 0; width: 100vw; height: 100vh; height: 100dvh; object-fit: cover; object-position: center; z-index: -1;">
+ <img src="tow-images/logo-bgr.png" alt="Title" style="width: clamp(180px, 40vw, 300px); height: auto; max-width: 90vw; object-fit: contain; position: absolute; top: clamp(12px, 3vh, 25px); left: 50%; transform: translateX(-50%); z-index: 1;">
+ 
+<div class="login-card">
+    <h1 class="login-card-title">Log in</h1>
+    <p class="login-card-subtitle">Welcome back! Enter your username and password.</p>
+
+    <form id="loginForm" class="login-form">
+      <div class="login-input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" required pattern=".*\S.*" title="Enter a username containing at least one non-space character" />
+      </div>
+
+      <div class="login-input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password" required pattern=".*\S.*" title="Enter a password containing at least one non-space character" />
+      </div>
+
+      <button type="submit" id="loginForm" class="login-btn-submit">Log in</button>
+    </form>
+
+    <p class="signup-prompt">
+      No account yet? <a href="signup.html" id="signupLink">Sign up</a>
+    </p>
+  </div>
+  <script src="tow-script/storage.js"></script>
+ <script src="tow-script/menu.js"></script>
+ <script src="tow-script/music.js"></script>
+</body>
+</html>

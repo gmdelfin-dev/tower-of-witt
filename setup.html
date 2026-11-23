@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="tow-images/favicon-logo.png">
+  <link rel="apple-touch-icon" href="tow-images/apple-touch-icon.png">
+  <title>Get Ready | Tower of Wit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="setup-page">
+
+  <main class="page-container">
+
+    <div class="logo-container">
+        <img src="tow-images/tower-of-wit-logo-removed-bg.png" alt="Tower of Wit Logo" class="game-logo">
+    </div>       
+    <h1 class="page-title">Get Ready!</h1>
+
+    <section>
+      <h2 class="section-title">Choose Your Topic</h2>
+
+      <div class="topic-grid">
+
+        <label class="topic-option">
+          <input type="radio" name="topic" value="History">
+           <div class="topic-card">
+             <span>History</span>
+           </div>
+        </label>
+
+        <label class="topic-option">
+          <input type="radio" name="topic" value="Food">
+           <div class="topic-card">
+             <span>Food</span>
+           </div>
+        </label>
+
+        <label class="topic-option">
+          <input type="radio" name="topic" value="Places">
+           <div class="topic-card">
+             <span>Places</span>
+           </div>
+        </label>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Choose Today's Weather</h2>
+
+      <div class="weather-grid">
+        <label class="weather-option">
+          <input type="radio" name="weather" value="Rainy">
+
+          <div class="weather-card">
+            <img src="tow-images/backgrounds/rainy.jpg" alt="Rainy weather" class="weather-image">
+            <span class="weather-name">Rainy</span>
+            <span class="weather-mode">Easy Mode</span>
+          </div>
+        </label>
+
+        <label class="weather-option">
+          <input type="radio" name="weather" value="Snowy">
+          <div class="weather-card">
+            <img src="tow-images/backgrounds/snowy.jpg" alt="Snowy weather" class="weather-image">
+            <span class="weather-name">Snowy</span>
+            <span class="weather-mode">Medium Mode</span>
+        </div>
+        </label>
+
+        <label class="weather-option">
+          <input type="radio" name="weather" value="Windy">
+          <div class="weather-card">
+            <img src="tow-images/backgrounds/windy.jpg" alt="Windy weather" class="weather-image">
+            <span class="weather-name">Windy</span>
+            <span class="weather-mode">Hard Mode</span>
+          </div>
+        </label>
+
+        <label class="weather-option">
+          <input type="radio" name="weather" value="Sunny">
+          <div class="weather-card">
+            <img src="tow-images/backgrounds/sunny.jpg" alt="Sunny weather" class="weather-image">
+            <span class="weather-name">Sunny</span>
+            <span class="weather-mode">Hardest Mode</span>
+          </div>
+        </label>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Choose Your Animal Partner</h2>
+      <p class="section-description">
+        Pick an animal partner that matches your chosen weather!
+      </p>
+
+      <div class="animal-grid">
+        <label class="animal-option">
+          <input type="radio" name="animal" value="Frog">
+          <div class="animal-card">
+            <img src="tow-images/animals/frog.png" alt="Frog" class="animal-image">
+            <span class="animal-name">Frog</span>
+            <br>
+            <span class="animal-description">Rainy Weather</span>
+          </div>
+        </label>
+
+        <label class="animal-option">
+          <input type="radio" name="animal" value="Penguin">
+          <div class="animal-card">
+            <img src="tow-images/animals/penguin.png" alt="Penguin" class="animal-image">
+            <span class="animal-name">Penguin</span>
+            <br>
+            <span class="animal-description">Snowy Weather</span>
+          </div>
+        </label>
+
+        <label class="animal-option">
+          <input type="radio" name="animal" value="Eagle">
+          <div class="animal-card">
+            <img src="tow-images/animals/eagle.png" alt="Eagle" class="animal-image">
+            <span class="animal-name">Eagle</span>
+            <br>
+            <span class="animal-description">Windy Weather</span>
+          </div>
+        </label>
+
+        <label class="animal-option">
+          <input type="radio" name="animal" value="Carabao">
+          <div class="animal-card">
+            <img src="tow-images/animals/carabao.png" alt="Carabao" class="animal-image">
+            <span class="animal-name">Carabao</span>    
+            <br>
+            <span class="animal-description">Sunny Weather</span>
+          </div>
+        </label>
+      </div>
+    </section>
+
+    <div class="action-row">
+      <nav class="page-navigation">
+         <a href="home-tow.html" class="nav-button">
+         <span class="nav-arrow">←</span>
+         <span>Back</span>
+         </a>
+         <a href="howtoplay.html" class="nav-button help-button">
+           <img src="tow-images/icons/help.png" alt="Help" class="nav-icon">
+           <span>Help Guide</span>
+         </a>
+         <a href="levelmap.html" class="nav-button next-button" id="nextButton" >
+          <span>Next</span>
+          <span class="nav-arrow">→</span>
+         </a>
+     </nav>  
+    </div>
+  </main>
+
+  <script src="tow-script/storage.js"></script>
+  <script src="tow-script/setup.js"></script>
+  <script src="tow-script/music.js"></script>
+</body>
+</html>
